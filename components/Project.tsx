@@ -34,6 +34,7 @@ const projects = [
 const Project = ({ className }: { className: string }) => {
   return (
     <section
+      id="project"
       className={`relative max-w-full mx-auto font-helvetica-neue min-h-screen pt-24 ${className}`}
     >
       {/* Description */}

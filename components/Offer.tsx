@@ -28,6 +28,7 @@ const Offer = ({ className }: { className: string }) => {
   };
   return (
     <section
+      id="services"
       className={`relative max-w-full mx-auto font-helvetica-neue min-h-screen pt-24 ${className}`}
     >
       {/* Description */}

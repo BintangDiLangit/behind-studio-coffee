@@ -3,6 +3,7 @@ import React from "react";
 const About = ({ className }: { className: string }) => {
   return (
     <section
+      id="about"
       className={`relative max-w-full mx-auto font-helvetica-neue min-h-screen mt-16 ${className}`}
     >
       {/* Title */}

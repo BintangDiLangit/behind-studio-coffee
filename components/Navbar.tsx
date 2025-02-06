@@ -22,19 +22,22 @@ export function Navbar({ className }: { className: string }) {
           {/* Desktop navigation */}
           <div className="hidden md:flex items-center space-x-12">
             <Link
-              href="/about"
+              href="#about"
+              scroll={true}
               className="text-gray-700 hover:text-gray-900 transition-colors"
             >
               About
             </Link>
             <Link
-              href="/services"
+              href="#services"
+              scroll={true}
               className="text-gray-700 hover:text-gray-900 transition-colors"
             >
               Services
             </Link>
             <Link
-              href="/project"
+              href="#project"
+              scroll={true}
               className="text-gray-700 hover:text-gray-900 transition-colors"
             >
               Project
@@ -56,7 +59,7 @@ export function Navbar({ className }: { className: string }) {
           {/* Right section - for symmetry on desktop */}
           <div className="hidden md:flex items-center ml-auto ">
             <Link
-              href="/contact"
+              href="/"
               className="text-gray-700 hover:text-gray-900 transition-colors font-bold"
             >
               HELLO@BEHIND.COM
@@ -92,28 +95,28 @@ export function Navbar({ className }: { className: string }) {
         >
           <div className="px-4 pt-2 pb-3 text-right space-y-1 bg-white/80 backdrop-blur-md">
             <Link
-              href="/about"
+              href="#about"
               className="block px-3 py-2 text-gray-700 hover:text-gray-900 transition-colors"
             >
               About
             </Link>
             <Link
-              href="/services"
+              href="#services"
               className="block px-3 py-2 text-gray-700 hover:text-gray-900 transition-colors"
             >
               Services
             </Link>
             <Link
-              href="/project"
+              href="#project"
               className="block px-3 py-2 text-gray-700 hover:text-gray-900 transition-colors"
             >
               Project
             </Link>
             <Link
-              href="/contact"
+              href="/"
               className="block px-3 py-2 text-gray-700 hover:text-gray-900 transition-colors"
             >
-              Contact
+              HELLO@BEHIND.COM
             </Link>
           </div>
         </div>

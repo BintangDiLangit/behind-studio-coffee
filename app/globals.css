@@ -81,6 +81,10 @@
     @apply bg-background text-foreground;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   .rectangle-div,
   .rectangle-icon {
     width: 322px;
