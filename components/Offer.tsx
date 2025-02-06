@@ -13,11 +13,41 @@ const services = [
       "Naoto Studio crafts compelling brand identities that resonate. Distinctive logos, typography, and visual narratives capture essence and fuel connection.",
     images: ["/services/image-0.png", "/services/image-1.png"],
   },
-  { id: 2, title: "Branding & Campaign" },
-  { id: 3, title: "Visual Identity" },
-  { id: 4, title: "Digital Content" },
-  { id: 5, title: "Video Photo Production" },
-  { id: 6, title: "Digital ADS Management" },
+  {
+    id: 2,
+    title: "Branding & Campaign",
+    description:
+      "Naoto Studio crafts compelling brand identities that resonate. Distinctive logos, typography, and visual narratives capture essence and fuel connection.",
+    images: ["/services/image-0.png", "/services/image-1.png"],
+  },
+  {
+    id: 3,
+    title: "Visual Identity",
+    description:
+      "Naoto Studio crafts compelling brand identities that resonate. Distinctive logos, typography, and visual narratives capture essence and fuel connection.",
+    images: ["/services/image-0.png", "/services/image-1.png"],
+  },
+  {
+    id: 4,
+    title: "Digital Content",
+    description:
+      "Naoto Studio crafts compelling brand identities that resonate. Distinctive logos, typography, and visual narratives capture essence and fuel connection.",
+    images: ["/services/image-0.png", "/services/image-1.png"],
+  },
+  {
+    id: 5,
+    title: "Video Photo Production",
+    description:
+      "Naoto Studio crafts compelling brand identities that resonate. Distinctive logos, typography, and visual narratives capture essence and fuel connection.",
+    images: ["/services/image-0.png", "/services/image-1.png"],
+  },
+  {
+    id: 6,
+    title: "Digital ADS Management",
+    description:
+      "Naoto Studio crafts compelling brand identities that resonate. Distinctive logos, typography, and visual narratives capture essence and fuel connection.",
+    images: ["/services/image-0.png", "/services/image-1.png"],
+  },
 ];
 
 const Offer = ({ className }: { className: string }) => {
@@ -44,7 +74,7 @@ const Offer = ({ className }: { className: string }) => {
 
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl">
           We offer a full range of creative services designed to meet your
-          brand's unique needs and goals.
+          brand&rsquo;s unique needs and goals.
         </p>
       </div>
       {services.map((service, index) => (

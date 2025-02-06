@@ -1,6 +1,4 @@
 "use client";
-
-import React, { useState } from "react";
 import ArrowOutward from "./ui/arrow-outward";
 import Image from "next/image";
 
