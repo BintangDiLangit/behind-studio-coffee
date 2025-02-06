@@ -45,7 +45,7 @@ export default function RootLayout({
       <body
         className={`${helveticaNeue.className} ${libreBasVil.className} antialiased`}
       >
-        <main className="lg:px-16 px-6">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );

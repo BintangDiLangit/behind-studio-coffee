@@ -6,12 +6,13 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <section className="relative max-w-full mx-auto h-[80vh] overflow-hidden pt-32">
-      {/* <div className="h-50"></div> */}
-      {/* Marquee Wrapper */}
-      <div className="flex w-[80%] space-x-2 animate-marquee">
+    <section className="relative max-w-full mx-auto overflow-hidden pt-32">
+      <div className="flex w-[80%] space-x-2 animate-marquee flex-nowrap">
         {galleries.concat(galleries).map((gallery, index) => (
-          <div key={index} className="flex-shrink-0 w-[20%]">
+          <div
+            key={index}
+            className="flex-shrink-0 md:w-[20%] w-[50%] min-w-[200px]"
+          >
             <Image
               src={gallery.image}
               alt={`Gallery Image ${index}`}
