@@ -45,13 +45,13 @@ export const metadata: Metadata = {
     "Marketing",
     "Digital Advertising",
   ],
-  authors: [{ name: "Behind Studio", url: "https://behindstudio.com" }],
+  authors: [{ name: "Behind Studio", url: "https://behindstd.com" }],
   applicationName: "Behind Studio",
   // openGraph: {
   //   title: "Behind Studio - Creative Agency",
   //   description:
   //     "We create engaging social media content, branding, and digital strategies to help brands grow and connect with their audience.",
-  //   url: "https://behindstudio.com",
+  //   url: "https://behindstd.com",
   //   siteName: "Behind Studio",
   //   images: [
   //     {
