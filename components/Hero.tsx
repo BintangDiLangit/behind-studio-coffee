@@ -5,11 +5,27 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Hero = ({ className }: { className: string }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 0.75; // Slower playback for better ambiance
+    const video = videoRef.current;
+
+    if (video) {
+      // Coba play video, jika gagal berarti autoplay diblokir
+      video.play().catch(() => {
+        console.log("Autoplay blocked, requiring user interaction");
+
+        // Jika autoplay gagal, tambahkan event listener agar user bisa play video
+        const handleInteraction = () => {
+          video.play();
+          document.removeEventListener("click", handleInteraction);
+          document.removeEventListener("touchstart", handleInteraction);
+        };
+
+        // Tunggu user klik atau sentuh layar untuk mulai video
+        document.addEventListener("click", handleInteraction);
+        document.addEventListener("touchstart", handleInteraction);
+      });
     }
   }, []);
 
@@ -27,7 +43,6 @@ const Hero = ({ className }: { className: string }) => {
           playsInline
           preload="auto"
           className="absolute top-0 left-0 w-full h-[80vh] max-h-[80vh] object-cover brightness-[0.85]"
-          poster="/video-poster.jpg"
         >
           <source src="/hero_ambience.mp4" type="video/mp4" />
           Your browser does not support the video tag.
