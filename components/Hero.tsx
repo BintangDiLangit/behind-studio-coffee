@@ -5,24 +5,21 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Hero = ({ className }: { className: string }) => {
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     const video = videoRef.current;
 
     if (video) {
-      // Coba play video, jika gagal berarti autoplay diblokir
       video.play().catch(() => {
         console.log("Autoplay blocked, requiring user interaction");
 
-        // Jika autoplay gagal, tambahkan event listener agar user bisa play video
         const handleInteraction = () => {
           video.play();
           document.removeEventListener("click", handleInteraction);
           document.removeEventListener("touchstart", handleInteraction);
         };
 
-        // Tunggu user klik atau sentuh layar untuk mulai video
         document.addEventListener("click", handleInteraction);
         document.addEventListener("touchstart", handleInteraction);
       });
