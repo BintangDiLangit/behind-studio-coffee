@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     // images: ["https://behindstd.com/twitter-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/orange-effect.svg",
     // apple: "/apple-touch-icon.png",
   },
   // manifest: "/site.webmanifest",

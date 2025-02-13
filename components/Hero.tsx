@@ -41,7 +41,7 @@ const Hero = ({ className }: { className: string }) => {
           preload="auto"
           className="absolute top-0 left-0 w-full h-[80vh] max-h-[80vh] object-cover brightness-[0.85]"
         >
-          <source src="/hero_ambience.mp4" type="video/mp4" />
+          <source src="/hero_ambience_converted.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -49,7 +49,7 @@ const Hero = ({ className }: { className: string }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="absolute top-[35%] w-full flex justify-center text-center hidden md:block"
+          className="absolute top-[40%] w-full flex justify-center text-center hidden md:block"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white relative">
             more <span className="text-[#ff4d00] italic font-light">than</span>{" "}
