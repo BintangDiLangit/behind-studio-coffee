@@ -25,6 +25,7 @@ const Hero = ({ className }: { className: string }) => {
           muted
           loop
           playsInline
+          preload="auto"
           className="absolute top-0 left-0 w-full h-[80vh] max-h-[80vh] object-cover brightness-[0.85]"
           poster="/video-poster.jpg"
         >

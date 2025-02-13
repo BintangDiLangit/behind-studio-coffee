@@ -76,7 +76,7 @@ const Offer: React.FC<OfferProps> = ({ className = "" }) => {
 
         <p className="text-lg md:text-xl text-gray-700 max-w-2xl">
           We offer a full range of creative services designed to meet your
-          brand's unique needs and goals.
+          brand&apos;s unique needs and goals.
         </p>
       </div>
 
