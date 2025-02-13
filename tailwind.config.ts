@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "640px",
+        xl: "1280px",
+      },
       fontFamily: {
         "helvetica-neue": ["Helvetica Neue", "sans-serif"],
         "libre-baskerville": ["Libre Baskerville", "serif"],

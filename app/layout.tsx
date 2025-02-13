@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   //   siteName: "Behind Studio",
   //   images: [
   //     {
-  //       url: "https://behindstudio.com/og-image.jpg",
+  //       url: "https://behindstd.com/og-image.jpg",
   //       width: 1200,
   //       height: 630,
   //       alt: "Behind Studio - Creative Agency",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: "Behind Studio - Creative Agency",
     description:
       "We create engaging social media content, branding, and digital strategies to help brands grow and connect with their audience.",
-    // images: ["https://behindstudio.com/twitter-image.jpg"],
+    // images: ["https://behindstd.com/twitter-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

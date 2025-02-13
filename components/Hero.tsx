@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero = ({ className }: { className: string }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -13,9 +14,9 @@ const Hero = ({ className }: { className: string }) => {
   }, []);
 
   return (
-    <div className={`${className}`}>
+    <div className={`${className} bg-gray-50 pb-5`}>
       <section
-        className={`relative w-full overflow-hidden mt-16 font-helvetica-neue `}
+        className={`relative w-full overflow-hidden mt-16 font-helvetica-neue`}
       >
         {/* Video Background */}
         <video
@@ -24,30 +25,30 @@ const Hero = ({ className }: { className: string }) => {
           muted
           loop
           playsInline
-          className="absolute top-0 left-0 w-full h-full max-h-[60vh] object-cover brightness-[0.85]"
+          className="absolute top-0 left-0 w-full h-[80vh] max-h-[80vh] object-cover brightness-[0.85]"
           poster="/video-poster.jpg"
         >
           <source src="/hero_ambience.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* Title in Center */}
-        {/* <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-white text-center">
-            more <span className="text-[#ff4d00] italic font-light">than</span>{" "}
-            a studio
-          </h1>
-        </div> */}
-
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="absolute top-[35%] w-full flex justify-center text-center"
+          className="absolute top-[35%] w-full flex justify-center text-center hidden md:block"
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-white">
+          <h1 className="text-5xl md:text-7xl font-bold text-white relative">
             more <span className="text-[#ff4d00] italic font-light">than</span>{" "}
             a studio
+            {/* Tambahkan gambar di sudut tulisan "studio" */}
+            <Image
+              src="/orange-effect.svg"
+              alt="Orange Glow"
+              width={120}
+              height={120}
+              className="absolute right-[530px] top-[-40px] w-32 h-32 scale-150 opacity-80"
+            />
           </h1>
         </motion.div>
 
@@ -57,7 +58,7 @@ const Hero = ({ className }: { className: string }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-          className="relative mx-auto pt-[65vh] text-black"
+          className="relative mx-auto pt-[85vh] text-black"
         >
           <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4 text-center md:text-left w-full">
             <p className="text-sm md:text-sm max-w-md w-full md:w-auto">

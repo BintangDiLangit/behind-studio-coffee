@@ -15,7 +15,7 @@ export function Navbar({ className }: { className: string }) {
 
   return (
     <nav
-      className={`fixed top-0 w-full bg-white backdrop-blur-md z-50 border-b font-helvetica-neue font-medium ${className}`}
+      className={`fixed top-0 w-full bg-white backdrop-blur-md z-50 border-b font-helvetica-neue font-medium ${className} bg-gray-50`}
     >
       <div className="mx-auto">
         <div className="flex items-center justify-between h-16">
